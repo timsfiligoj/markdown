@@ -54,7 +54,7 @@ export default function AdminPage() {
       <div className="flex min-h-screen flex-col items-center justify-center p-8">
         <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-md text-center">
           <h1 className="text-2xl font-bold text-red-600 mb-4">Access Denied</h1>
-          <p className="mb-6">You don't have permission to access this page.</p>
+          <p className="mb-6">You don&apos;t have permission to access this page.</p>
           <Link 
             href="/home" 
             className="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
@@ -104,7 +104,7 @@ export default function AdminPage() {
                           <img 
                             className="h-8 w-8 rounded-full mr-3" 
                             src={user.photoURL} 
-                            alt={user.displayName || 'User'} 
+                            alt={user.displayName || 'User profile'} 
                           />
                         )}
                         <div>

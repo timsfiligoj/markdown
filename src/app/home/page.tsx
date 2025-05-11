@@ -246,9 +246,9 @@ function hello() {
     thead: ({children, ...props}) => <thead className="bg-gray-50" {...props}>{children}</thead>,
     th: ({children, ...props}) => <th className="py-2 px-4 text-left text-sm font-semibold text-gray-900 border-r last:border-r-0" {...props}>{children}</th>,
     td: ({children, ...props}) => <td className="py-2 px-4 text-sm border-r last:border-r-0 border-t" {...props}>{children}</td>,
-    img: ({...props}) => (
+    img: ({src, ...props}) => (
       <div className="flex justify-center my-6">
-        <img className="max-w-full rounded shadow-md" {...props} />
+        <img className="max-w-full rounded shadow-md" src={src} alt={props.alt || "Image"} {...props} />
       </div>
     ),
   };
